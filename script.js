@@ -45,19 +45,6 @@ function ready() {
     .getElementsByClassName("btn-buy")[0]
     .addEventListener("click", buyButtonClicked);
 }
-//Defining product availability
-const productAvailability = {
-  "ZARA PRINTED SHIRT": true,
-  "BOAT AIRDOPES 148": true,
-  "ROADSTER HOODIES": true,
-  "MILTON WATER BOTTLE": false,
-  "RAY-BAN SUNGLASSES": true,
-  "NEWYORK CITY HAT": true,
-  "HARRISONS BAG": true,
-  "ADIDAS SHOES": true,
-  "HP LAPTOP": true,
-};
-
 function buyButtonClicked() {
   var cartContent = document.getElementsByClassName("cart-content")[0];
   var cartBoxes = cartContent.getElementsByClassName("cart-box");
