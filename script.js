@@ -45,6 +45,18 @@ function ready() {
     .getElementsByClassName("btn-buy")[0]
     .addEventListener("click", buyButtonClicked);
 }
+//Defining product availability
+const productAvailability = {
+  "BODY LOTION": true,
+  "DERMAQUEST STEM-CELL": true,
+  "LIP BALM": true,
+  "BLUSH": false,
+  "SKIN CARE": true,
+  "MATT LIPSTICK": true,
+  "EYE SHADOW PALLET": true,
+  "LIP STICK": false,
+};
+
 function buyButtonClicked() {
   var cartContent = document.getElementsByClassName("cart-content")[0];
   var cartBoxes = cartContent.getElementsByClassName("cart-box");
